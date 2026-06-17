@@ -1,26 +1,43 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brand Forge Media</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Brand Forge Media | Build. Market. Scale.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
+:root{
+--brown:#4A392F;
+--brown-dark:#3B2D25;
+--brown-light:#5C493D;
+--ivory:#EFE8D1;
+--ivory-soft:#DDD3B3;
+--border:#6A584A;
+}
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Inter',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-background:#0b0b0b;
-color:white;
-line-height:1.6;
+font-family:'Inter',sans-serif;
+background:var(--brown);
+color:var(--ivory);
+line-height:1.7;
+overflow-x:hidden;
 }
 
 .container{
@@ -30,16 +47,14 @@ margin:auto;
 }
 
 nav{
-padding:25px 0;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:25px 0;
 }
 
-.logo{
-font-size:28px;
-font-weight:800;
-color:#ff6b00;
+.logo img{
+height:70px;
 }
 
 nav ul{
@@ -49,55 +64,64 @@ gap:30px;
 }
 
 nav a{
-color:white;
+color:var(--ivory);
 text-decoration:none;
+font-size:15px;
 }
 
 .hero{
-padding:120px 0;
+min-height:90vh;
+display:flex;
+align-items:center;
 text-align:center;
+background:
+radial-gradient(circle at top,
+rgba(239,232,209,.10),
+transparent 60%);
+}
+
+.hero-content{
+max-width:900px;
+margin:auto;
 }
 
 .hero h1{
-font-size:72px;
-font-weight:800;
-line-height:1.1;
-margin-bottom:20px;
-}
-
-.hero span{
-color:#ff6b00;
+font-family:'Cormorant Garamond',serif;
+font-size:90px;
+line-height:.95;
+margin-bottom:25px;
 }
 
 .hero p{
-max-width:700px;
+max-width:750px;
 margin:auto;
 font-size:20px;
-color:#cfcfcf;
+color:var(--ivory-soft);
 margin-bottom:40px;
 }
 
 .btn{
 display:inline-block;
-padding:16px 35px;
-background:#ff6b00;
-color:white;
+padding:18px 40px;
+background:var(--ivory);
+color:var(--brown);
 text-decoration:none;
-border-radius:10px;
+border-radius:12px;
 font-weight:600;
 }
 
-.section{
+section{
 padding:100px 0;
 }
 
-.title{
+.section-title{
 text-align:center;
 margin-bottom:60px;
 }
 
-.title h2{
-font-size:48px;
+.section-title h2{
+font-family:'Cormorant Garamond',serif;
+font-size:56px;
 }
 
 .services{
@@ -107,15 +131,20 @@ gap:25px;
 }
 
 .card{
-background:#151515;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(239,232,209,.12);
 padding:35px;
-border-radius:20px;
-border:1px solid #222;
+border-radius:24px;
 }
 
 .card h3{
-color:#ff6b00;
+font-family:'Cormorant Garamond',serif;
+font-size:28px;
 margin-bottom:15px;
+}
+
+.card p{
+color:var(--ivory-soft);
 }
 
 .about{
@@ -130,9 +159,15 @@ width:100%;
 border-radius:20px;
 }
 
-.highlight{
-color:#ff6b00;
-font-weight:700;
+.about h2{
+font-family:'Cormorant Garamond',serif;
+font-size:54px;
+margin-bottom:20px;
+}
+
+.about p{
+color:var(--ivory-soft);
+margin-bottom:20px;
 }
 
 .features{
@@ -142,20 +177,15 @@ gap:20px;
 }
 
 .feature{
-background:#151515;
+background:rgba(255,255,255,.03);
 padding:25px;
-border-radius:15px;
+border-radius:20px;
+border:1px solid rgba(239,232,209,.12);
 }
 
-.creator-network{
-background:#111;
-padding:100px 0;
+.creator{
+background:var(--brown-dark);
 text-align:center;
-}
-
-.creator-network h2{
-font-size:50px;
-margin-bottom:20px;
 }
 
 .stats{
@@ -166,44 +196,62 @@ margin-top:50px;
 }
 
 .stat{
-background:#151515;
-padding:30px;
-border-radius:15px;
+background:rgba(255,255,255,.03);
+padding:35px;
+border-radius:24px;
 }
 
 .stat h3{
-font-size:42px;
-color:#ff6b00;
+font-size:50px;
 }
 
 .cta{
 text-align:center;
-padding:120px 0;
 }
 
 .cta h2{
-font-size:56px;
+font-family:'Cormorant Garamond',serif;
+font-size:60px;
 margin-bottom:20px;
 }
 
+.cta p{
+color:var(--ivory-soft);
+margin-bottom:30px;
+}
+
 footer{
-padding:40px;
+background:var(--brown-dark);
+padding:60px 0;
 text-align:center;
-background:black;
-border-top:1px solid #222;
+}
+
+footer img{
+height:70px;
+margin-bottom:20px;
+}
+
+footer p{
+color:var(--ivory-soft);
 }
 
 @media(max-width:768px){
 
+nav{
+flex-direction:column;
+gap:20px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
 .hero h1{
-font-size:42px;
+font-size:48px;
 }
 
 .about{
-grid-template-columns:1fr;
-}
-
-.stats{
 grid-template-columns:1fr;
 }
 
@@ -211,48 +259,72 @@ grid-template-columns:1fr;
 grid-template-columns:1fr;
 }
 
+.stats{
+grid-template-columns:1fr;
 }
-</style>
 
+.section-title h2,
+.about h2,
+.cta h2{
+font-size:38px;
+}
+}
+
+</style>
 </head>
+
 <body>
 
 <div class="container">
 
 <nav>
-<div class="logo">BRAND FORGE MEDIA</div>
+
+<div class="logo">
+<img src="images/logo.png" alt="Brand Forge Media">
+</div>
 
 <ul>
 <li><a href="#">Home</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Contact</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
+
 </nav>
-
-<section class="hero">
-
-<h1>
-WE DON'T JUST MARKET BRANDS.<br>
-<span>WE FORGE THEM.</span>
-</h1>
-
-<p>
-Brand Forge Media is a 360° marketing agency helping businesses grow through
-branding, social media, websites, performance marketing and influencer collaborations.
-</p>
-
-<a href="#" class="btn">Book Free Consultation</a>
-
-</section>
 
 </div>
 
-<section class="section">
+<section class="hero">
 
 <div class="container">
 
-<div class="title">
+<div class="hero-content">
+
+<h1>
+Build.<br>
+Market.<br>
+Scale.
+</h1>
+
+<p>
+From branding and websites to social media, ads and influencer marketing, Brand Forge Media helps ambitious businesses grow through creative strategies that deliver measurable results.
+</p>
+
+<a href="#contact" class="btn">
+Book Free Consultation
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-title">
 <h2>Everything Your Brand Needs.<br>Under One Roof.</h2>
 </div>
 
@@ -260,17 +332,17 @@ branding, social media, websites, performance marketing and influencer collabora
 
 <div class="card">
 <h3>Social Media Marketing</h3>
-<p>Content creation, social media management, reels and growth strategies.</p>
+<p>Content creation, reels, management and growth strategies.</p>
 </div>
 
 <div class="card">
 <h3>Branding & Design</h3>
-<p>Logos, brand identity, packaging and visual storytelling.</p>
+<p>Logo design, brand identity, packaging and marketing creatives.</p>
 </div>
 
 <div class="card">
 <h3>Website Development</h3>
-<p>Business websites, landing pages and e-commerce solutions.</p>
+<p>Business websites, landing pages and eCommerce stores.</p>
 </div>
 
 <div class="card">
@@ -280,12 +352,12 @@ branding, social media, websites, performance marketing and influencer collabora
 
 <div class="card">
 <h3>Content Production</h3>
-<p>Photography, videography and high-performing creatives.</p>
+<p>Photography, videography and high-converting creatives.</p>
 </div>
 
 <div class="card">
 <h3>Influencer Marketing</h3>
-<p>Connect with creators across Chhattisgarh through CG Creator Network.</p>
+<p>Connect with creators through our CG Creator Network.</p>
 </div>
 
 </div>
@@ -294,31 +366,30 @@ branding, social media, websites, performance marketing and influencer collabora
 
 </section>
 
-<section class="section">
+<section id="about">
 
 <div class="container">
 
 <div class="about">
 
 <div>
-<h2>Building Brands People Remember.</h2>
 
-<br>
+<h2>Creating Brands People Remember.</h2>
 
 <p>
-Brand Forge Media helps startups, local businesses and growing brands establish a strong digital presence through creative strategy and measurable marketing.
+Brand Forge Media is a 360° marketing agency that combines branding, content, websites, performance marketing and influencer collaborations to help businesses grow faster.
 </p>
 
-<br>
-
 <p>
-We combine <span class="highlight">branding, content, websites, ads and influencers</span> to build brands that stand out and grow faster.
+We don't just market brands. We forge them.
 </p>
 
 </div>
 
 <div>
-<img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200">
+
+<img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200" alt="Marketing Agency">
+
 </div>
 
 </div>
@@ -327,22 +398,19 @@ We combine <span class="highlight">branding, content, websites, ads and influenc
 
 </section>
 
-<section class="section">
+<section>
 
 <div class="container">
 
-<div class="title">
+<div class="section-title">
 <h2>Why Choose Brand Forge Media?</h2>
 </div>
 
 <div class="features">
 
 <div class="feature">✓ Complete 360° Marketing Solutions</div>
-
-<div class="feature">✓ Creative Content & Branding Team</div>
-
+<div class="feature">✓ Creative Branding & Content Team</div>
 <div class="feature">✓ Website & Performance Marketing Experts</div>
-
 <div class="feature">✓ Influencer Network Across Chhattisgarh</div>
 
 </div>
@@ -351,15 +419,15 @@ We combine <span class="highlight">branding, content, websites, ads and influenc
 
 </section>
 
-<section class="creator-network">
+<section class="creator">
 
 <div class="container">
 
+<div class="section-title">
 <h2>CG Creator Network</h2>
+</div>
 
-<p>
-The creator ecosystem connecting brands and influencers across Chhattisgarh.
-</p>
+<p>The creator ecosystem connecting brands and influencers across Chhattisgarh.</p>
 
 <div class="stats">
 
@@ -384,19 +452,19 @@ The creator ecosystem connecting brands and influencers across Chhattisgarh.
 
 </section>
 
-<section class="cta">
+<section id="contact" class="cta">
 
 <div class="container">
 
-<h2>Ready To Grow Your Brand?</h2>
+<h2>Ready To Build Something Remarkable?</h2>
 
 <p>
-Let's build something remarkable together.
+Let's create a brand people remember.
 </p>
 
-<br>
-
-<a href="#" class="btn">Let's Talk</a>
+<a href="https://wa.me/91YOURNUMBER" class="btn">
+Let's Talk
+</a>
 
 </div>
 
@@ -404,18 +472,13 @@ Let's build something remarkable together.
 
 <footer>
 
-<h3>Brand Forge Media</h3>
+<img src="images/logo.png" alt="Brand Forge Media">
 
-<p>
-Ambikapur, Chhattisgarh
-</p>
+<p>Ambikapur, Chhattisgarh</p>
 
-<p>
-Everything Your Brand Needs. Under One Roof.
-</p>
+<p>Branding • Websites • Marketing • Creators</p>
 
 </footer>
 
 </body>
 </html>
-```
