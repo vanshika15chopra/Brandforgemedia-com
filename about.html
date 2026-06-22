@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>About Brand Forge Media | Digital Marketing Agency in Chhattisgarh</title>
+<meta name="description" content="Learn about Brand Forge Media, a 360° digital marketing agency in Chhattisgarh offering branding, social media marketing, website development, performance marketing, content production and influencer marketing for growing businesses." />
+<meta name="keywords" content="About Brand Forge Media, digital marketing agency in Chhattisgarh, branding agency in Ambikapur, social media marketing agency in Chhattisgarh, website development company in Ambikapur, influencer marketing agency in Chhattisgarh, 360 marketing agency in Chhattisgarh" />
+<meta name="author" content="Brand Forge Media" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --brown:#4A392F;
+  --brown-dark:#3B2D25;
+  --brown-light:#5C493D;
+  --ivory:#EFE8D1;
+  --ivory-soft:#DDD3B3;
+  --border:#6A584A;
+  --card:rgba(255,255,255,.04);
+  --card-border:rgba(239,232,209,.12);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--brown);
+  color:var(--ivory);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* NAV */
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(59,45,37,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(239,232,209,.08);
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 0;
+}
+
+.logo img{
+  height:62px;
+  width:auto;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:28px;
+  align-items:center;
+}
+
+nav a{
+  color:var(--ivory);
+  text-decoration:none;
+  font-size:15px;
+  transition:.3s ease;
+}
+
+nav a:hover,
+nav a.active{
+  color:#fff;
+  opacity:.85;
+}
+
+/* HERO */
+.about-hero{
+  min-height:72vh;
+  display:flex;
+  align-items:center;
+  position:relative;
+  text-align:center;
+  background:
+    linear-gradient(rgba(25,18,14,.58), rgba(25,18,14,.70)),
+    url("about-hero.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.about-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at top, rgba(239,232,209,.10), transparent 55%);
+}
+
+.about-hero .container{
+  position:relative;
+  z-index:2;
+}
+
+.eyebrow{
+  display:inline-block;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-size:13px;
+  color:var(--ivory-soft);
+  margin-bottom:18px;
+}
+
+.about-hero h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:78px;
+  line-height:.95;
+  margin-bottom:24px;
+}
+
+.about-hero p{
+  max-width:820px;
+  margin:0 auto 30px;
+  font-size:20px;
+  color:var(--ivory-soft);
+}
+
+.hero-btn{
+  display:inline-block;
+  padding:16px 34px;
+  border-radius:12px;
+  background:var(--ivory);
+  color:var(--brown);
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s ease;
+}
+
+.hero-btn:hover{
+  transform:translateY(-2px);
+}
+
+/* GLOBAL SECTION */
+section{
+  padding:100px 0;
+}
+
+.section-title{
+  text-align:center;
+  max-width:850px;
+  margin:0 auto 60px;
+}
+
+.section-title span{
+  display:block;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  font-size:13px;
+  color:var(--ivory-soft);
+  margin-bottom:12px;
+}
+
+.section-title h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:56px;
+  line-height:1.05;
+  margin-bottom:14px;
+}
+
+.section-title p{
+  color:var(--ivory-soft);
+  font-size:18px;
+}
+
+/* STORY SECTION */
+.story-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:60px;
+  align-items:center;
+}
+
+.story-copy h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:56px;
+  line-height:1.05;
+  margin-bottom:24px;
+}
+
+.story-copy p{
+  color:var(--ivory-soft);
+  margin-bottom:18px;
+  font-size:17px;
+}
+
+.story-points{
+  margin-top:28px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+}
+
+.story-point{
+  padding:18px 18px;
+  border:1px solid var(--card-border);
+  background:var(--card);
+  border-radius:18px;
+  color:var(--ivory);
+  font-size:15px;
+}
+
+.story-image img{
+  width:100%;
+  border-radius:26px;
+  min-height:540px;
+  object-fit:cover;
+  box-shadow:0 20px 50px rgba(0,0,0,.20);
+}
+
+/* SERVICES */
+.services-wrap{
+  background:var(--brown-dark);
+}
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.service-card{
+  background:var(--card);
+  border:1px solid var(--card-border);
+  border-radius:24px;
+  padding:32px;
+  transition:.3s ease;
+}
+
+.service-card:hover{
+  transform:translateY(-4px);
+}
+
+.service-number{
+  font-size:14px;
+  color:var(--ivory-soft);
+  margin-bottom:12px;
+  letter-spacing:.08em;
+}
+
+.service-card h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:30px;
+  margin-bottom:12px;
+}
+
+.service-card p{
+  color:var(--ivory-soft);
+  font-size:16px;
+}
+
+/* WHY CHOOSE */
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+}
+
+.why-card{
+  background:var(--card);
+  border:1px solid var(--card-border);
+  border-radius:24px;
+  padding:30px;
+}
+
+.why-card h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+.why-card p{
+  color:var(--ivory-soft);
+}
+
+/* CREATOR NETWORK */
+.creator-section{
+  background:linear-gradient(180deg, var(--brown) 0%, var(--brown-dark) 100%);
+}
+
+.creator-grid{
+  display:grid;
+  grid-template-columns:.95fr 1.05fr;
+  gap:55px;
+  align-items:center;
+}
+
+.creator-image img{
+  width:100%;
+  border-radius:26px;
+  min-height:520px;
+  object-fit:cover;
+}
+
+.creator-copy h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:54px;
+  line-height:1.05;
+  margin-bottom:18px;
+}
+
+.creator-copy p{
+  color:var(--ivory-soft);
+  margin-bottom:18px;
+  font-size:17px;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:26px;
+}
+
+.stat{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(239,232,209,.10);
+  border-radius:22px;
+  padding:26px 20px;
+  text-align:center;
+}
+
+.stat h3{
+  font-size:42px;
+  line-height:1;
+  margin-bottom:8px;
+}
+
+.stat p{
+  color:var(--ivory-soft);
+  font-size:15px;
+}
+
+/* MISSION */
+.mission-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.mission-card{
+  background:var(--card);
+  border:1px solid var(--card-border);
+  border-radius:24px;
+  padding:34px 30px;
+}
+
+.mission-card h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:34px;
+  margin-bottom:14px;
+}
+
+.mission-card p{
+  color:var(--ivory-soft);
+}
+
+/* CTA */
+.cta{
+  text-align:center;
+  background:
+    linear-gradient(rgba(25,18,14,.78), rgba(25,18,14,.78)),
+    url("cta-bg.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.cta h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:62px;
+  line-height:1.05;
+  margin-bottom:18px;
+}
+
+.cta p{
+  max-width:760px;
+  margin:0 auto 28px;
+  color:var(--ivory-soft);
+  font-size:18px;
+}
+
+.btn{
+  display:inline-block;
+  padding:18px 40px;
+  background:var(--ivory);
+  color:var(--brown);
+  text-decoration:none;
+  border-radius:12px;
+  font-weight:600;
+}
+
+/* FOOTER */
+footer{
+  background:var(--brown-dark);
+  padding:60px 0;
+  text-align:center;
+}
+
+footer img{
+  height:70px;
+  width:auto;
+  margin:0 auto 18px;
+}
+
+footer p{
+  color:var(--ivory-soft);
+  margin-bottom:6px;
+}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .services-grid,
+  .mission-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .story-grid,
+  .creator-grid{
+    grid-template-columns:1fr;
+  }
+
+  .story-image img,
+  .creator-image img{
+    min-height:auto;
+  }
+}
+
+@media(max-width:768px){
+  nav{
+    flex-direction:column;
+    gap:16px;
+  }
+
+  nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+  }
+
+  .about-hero{
+    min-height:68vh;
+  }
+
+  .about-hero h1{
+    font-size:48px;
+  }
+
+  .about-hero p{
+    font-size:17px;
+  }
+
+  .section-title h2,
+  .story-copy h2,
+  .creator-copy h2,
+  .cta h2{
+    font-size:38px;
+  }
+
+  .story-points,
+  .services-grid,
+  .why-grid,
+  .stats,
+  .mission-grid{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:75px 0;
+  }
+
+  .logo img{
+    height:54px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="L Brand.ForgeMedia.png" alt="Brand Forge Media Logo">
+        </a>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="container">
+    <span class="eyebrow">About Brand Forge Media</span>
+    <h1>We Don’t Just Market Brands.<br>We Forge Them.</h1>
+    <p>
+      Brand Forge Media is a full-service digital marketing agency in Chhattisgarh helping businesses grow through branding, social media, website development, performance marketing, content production and influencer marketing.
+    </p>
+    <a href="index.html#contact" class="hero-btn">Book Free Consultation</a>
+  </div>
+</section>
+
+<!-- STORY / WHO WE ARE -->
+<section>
+  <div class="container">
+    <div class="story-grid">
+
+      <div class="story-copy">
+        <span class="eyebrow">Who We Are</span>
+        <h2>Building ambitious brands with strategy, creativity and execution.</h2>
+
+        <p>
+          Brand Forge Media is a <strong>360° digital marketing agency in Chhattisgarh</strong> built for businesses that want more than random marketing efforts. We create brand systems that bring together strategy, design, content, websites, paid campaigns and creator collaborations to help businesses grow with clarity and consistency.
+        </p>
+
+        <p>
+          We believe strong brands are not built by doing one thing well. They are built when every touchpoint works together — your visual identity, your website, your content, your campaigns and your message. That is why we focus on combining <strong>branding, social media marketing, website development, performance marketing and influencer marketing</strong> into one connected growth ecosystem.
+        </p>
+
+        <p>
+          Whether you are a startup, a local business, a founder-led brand or an established company looking to scale, Brand Forge Media helps you create a stronger presence, reach the right audience and build a brand people remember.
+        </p>
+
+        <div class="story-points">
+          <div class="story-point">360° marketing strategy tailored to business goals</div>
+          <div class="story-point">Branding, websites, content and ads under one roof</div>
+          <div class="story-point">Creative execution backed by business thinking</div>
+          <div class="story-point">Built for ambitious brands across Chhattisgarh</div>
+        </div>
+      </div>
+
+      <div class="story-image">
+        <img src="about-story.jpg" alt="Brand Forge Media digital marketing agency team">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="services-wrap">
+  <div class="container">
+
+    <div class="section-title">
+      <span>What We Do</span>
+      <h2>Everything your brand needs.<br>Under one roof.</h2>
+      <p>
+        From brand identity and content to websites, performance campaigns and influencer collaborations, we build the systems that help businesses grow online with confidence.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-number">01</div>
+        <h3>Branding & Design</h3>
+        <p>
+          We create brand identities, visual systems, campaign creatives and design assets that help businesses look consistent, premium and memorable across every touchpoint.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">02</div>
+        <h3>Social Media Marketing</h3>
+        <p>
+          We build social media strategies that combine content planning, reels, creative storytelling, platform management and audience-focused communication for sustainable brand growth.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">03</div>
+        <h3>Website Development</h3>
+        <p>
+          We design and develop business websites and landing pages that look strong, communicate clearly and support trust, lead generation and brand credibility.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">04</div>
+        <h3>Performance Marketing</h3>
+        <p>
+          From Meta Ads to lead generation campaigns, we create performance marketing systems designed to improve visibility, drive inquiries and support measurable business growth.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">05</div>
+        <h3>Content Production</h3>
+        <p>
+          We produce photography, video content, campaign visuals and brand creatives that strengthen your digital presence and help your communication feel polished and strategic.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">06</div>
+        <h3>Influencer Marketing</h3>
+        <p>
+          Through creator collaborations and our CG Creator Network, we help brands connect with relevant creators to build visibility, trust and authentic audience engagement.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section>
+  <div class="container">
+
+    <div class="section-title">
+      <span>Why Brand Forge Media</span>
+      <h2>Strategy, creativity and growth — all working together.</h2>
+      <p>
+        We are not a one-service agency trying to fit every brand into the same template. We build marketing systems around your business, your audience and your growth goals.
+      </p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <h3>360° Marketing Thinking</h3>
+        <p>
+          We connect branding, content, websites, paid campaigns and creator marketing into one cohesive strategy instead of treating each service separately.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <h3>Creative + Strategic Execution</h3>
+        <p>
+          We combine ideas with execution — helping brands move from concept to visuals, campaigns, websites and growth-focused communication.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <h3>Local Understanding, Modern Execution</h3>
+        <p>
+          As a digital marketing agency in Chhattisgarh, we understand regional businesses while bringing a modern, polished approach to branding and digital growth.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <h3>Built for Growing Brands</h3>
+        <p>
+          Whether you are launching, repositioning or scaling, we create the systems and visibility your brand needs to grow with confidence.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CREATOR NETWORK -->
+<section class="creator-section">
+  <div class="container">
+    <div class="creator-grid">
+
+      <div class="creator-image">
+        <img src="creator-network.jpg" alt="CG Creator Network by Brand Forge Media">
+      </div>
+
+      <div class="creator-copy">
+        <span class="eyebrow">CG Creator Network</span>
+        <h2>Powered by creators. Built for authentic brand growth.</h2>
+
+        <p>
+          One of the strongest differentiators of Brand Forge Media is our vision to build stronger connections between brands and creators through the <strong>CG Creator Network</strong>. This creator-led ecosystem is designed to help businesses access influencer marketing opportunities with relevant local and regional creators across Chhattisgarh.
+        </p>
+
+        <p>
+          For creators, it opens doors to collaborations, visibility and long-term brand partnerships. For businesses, it creates a smarter way to reach audiences through relatable content, community-led campaigns and creator-first storytelling.
+        </p>
+
+        <p>
+          By combining marketing strategy with influencer collaborations, we help brands move beyond one-time promotions and build communication that feels real, relevant and memorable.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <h3>100+</h3>
+            <p>Creators</p>
+          </div>
+          <div class="stat">
+            <h3>1M+</h3>
+            <p>Total Reach</p>
+          </div>
+          <div class="stat">
+            <h3>50+</h3>
+            <p>Collaborations</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MISSION / VISION / APPROACH -->
+<section>
+  <div class="container">
+
+    <div class="section-title">
+      <span>Our Foundation</span>
+      <h2>The values behind the work we do.</h2>
+      <p>
+        We build brands with long-term thinking, creative clarity and a strong focus on measurable business growth.
+      </p>
+    </div>
+
+    <div class="mission-grid">
+
+      <div class="mission-card">
+        <h3>Our Mission</h3>
+        <p>
+          To help brands grow through creative strategy, impactful communication and modern digital marketing solutions built for visibility, trust and long-term value.
+        </p>
+      </div>
+
+      <div class="mission-card">
+        <h3>Our Vision</h3>
+        <p>
+          To become one of the most trusted branding and digital marketing agencies in Chhattisgarh by building brands, campaigns and creator ecosystems that shape regional business growth.
+        </p>
+      </div>
+
+      <div class="mission-card">
+        <h3>Our Approach</h3>
+        <p>
+          We begin by understanding the brand, audience and business goal. From there, we build a tailored mix of branding, content, websites, paid campaigns and influencer marketing to support real growth.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <span class="eyebrow">Let’s Build Together</span>
+    <h2>Ready to build a brand people remember?</h2>
+    <p>
+      Whether you need branding, social media marketing, a website, performance campaigns or influencer collaborations, Brand Forge Media is here to help you build, market and scale with clarity.
+    </p>
+    <a href="https://wa.me/91YOURNUMBER" class="btn">Book a Free Consultation</a>
+  </div>
+</section>
+
+<footer>
+  <img src="L Brand.ForgeMedia.png" alt="Brand Forge Media Logo">
+  <p>Ambikapur, Chhattisgarh</p>
+  <p>Branding • Websites • Marketing • Creators</p>
+</footer>
+
+</body>
+</html>
